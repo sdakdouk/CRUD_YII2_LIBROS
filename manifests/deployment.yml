@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: sdakdoukcrudyiilibros 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: sdakdoukcrudyiilibros 
+    spec:
+      containers:
+        - name: sdakdoukcrudyiilibros 
+          image: samaraprueba.azurecr.io/sdakdoukcrudyiilibros
+          ports:
+          - containerPort: 80
